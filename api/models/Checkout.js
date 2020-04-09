@@ -11,3 +11,5 @@ const CheckOutSchema = new Schema({
 var CheckOut = mongoose.model('CheckOut', CheckOutSchema);
 
 module.exports = CheckOut;
+
+

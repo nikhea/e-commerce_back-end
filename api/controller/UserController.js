@@ -92,13 +92,9 @@ exports.login_user = async (req, res, next) => {
 	});
 };
 
-
-
 exports.get_users = async (req, res, next) => {
-	 try {
-       const users = await  db.Users.findById(req.user.id)
-          res.status.json(users)
-     } catch (error) {
-         
-     }
+	try {
+		const users = await db.Users.findById(req.user.id);
+		res.status.json(users);
+	} catch (error) {}
 };

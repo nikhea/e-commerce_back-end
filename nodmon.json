@@ -1,5 +1,6 @@
 {
-    "env": {
-        "JWT_KEY":"secretkey"
-    }
+	"env": {
+		"JWT_KEY": "secretkey",
+		"MoNGO_ATLAS_PW": "Congratulations"
+	}
 }

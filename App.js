@@ -11,7 +11,9 @@ UsersApi = require('./api/routes/User');
 seedDB = require('./seeds');
 
 // seedDB()
-mongoose.connect('mongodb://localhost/new-ecomm-shops', { useNewUrlParser: true, useUnifiedTopology: true });
+// mongoose.connect('mongodb://localhost/new-ecomm-shops', { useNewUrlParser: true, useUnifiedTopology: true });
+
+
 mongoose.Promise = global.Promise;
 
 app.use(bodyParser.urlencoded({ extended: false }));

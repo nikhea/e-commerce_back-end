@@ -12,6 +12,7 @@ exports.getAllProducts = async (req, res, next) => {
 		console.log(err);
 		res.status(500).json({ msg: 'Product not found' });
 	}
+	
 };
 
 exports.add_New_Products = async (req, res, next) => {
@@ -34,7 +35,6 @@ exports.add_New_Products = async (req, res, next) => {
 		} else {
 			res.status(500).json({ msg: 'unable to create new Product ' });
 		}
-
 	} catch (err) {
 		res.status(500).json({ msg: 'unable to create new Product ' });
 	}

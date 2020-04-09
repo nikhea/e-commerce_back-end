@@ -3,6 +3,7 @@
         "id": "0",
         "productName": "Huawei MateBook X Pro",
         "image": "huawei-matebook-pro.jpg",
+        "image": " https://www.google.com/search?q=huawei-matebook-pro.jpg&sxsrf=ALeKk00N_QLgn0496un2S_Qd_06NrbSs0w:1586467521845&tbm=isch&source=iu&ictx=1&fir=t9dV4vfmmrSOZM%253A%252Ct95AJUk9l3govM%252C_&vet=1&usg=AI4_-kTpvaxOkkaIcpzjEIpMzJaWRDn9Tw&sa=X&ved=2ahUKEwi79NiIpNzoAhUn0uAKHdpLAtoQ9QEwAXoECAoQBw#imgrc=t9dV4vfmmrSOZM:",
         "cpu": "Intel Core i7, 8th generation",
         "ram": "8GB",
         "storage": "512 GB SSD",
@@ -23,14 +24,7 @@
     },
     {
         "id": "2",
-        "productName": "Dell XPS 13",
-        "image": "dell-xps-13.png",
-        "cpu": "Intel Core i7, 8th generation",
-        "ram": "16GB",
-        "storage": "512 GB SSD",
-        "screen": "13.3-inch, Full HD",
-        "price": "1199",
-        "description": "The Dell XPS 13 is an absolutely brilliant laptop. The 2018 version rocks an 8th-generation Intel Core i5 or i7 processor and a bezel-less ‘Infinity Edge’ display, this Dell XPS 13 continues to be the most popular Windows laptop in the world. What’s more, there’s a wide range of customization options, so you can really make the Dell XPS 13 the best laptop for your needs. "
+        
     },
     {
         "id": "3",

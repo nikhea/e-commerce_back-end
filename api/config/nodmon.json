@@ -1,7 +1,6 @@
 {
-    "jwtSecret" : "sl_myjwtSecret",
-    "env": {
+	"env": {
 		"JWT_KEY": "secretkey",
 		"MoNGO_ATLAS_PW": "congratulations"
 	}
- }
+}
