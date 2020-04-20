@@ -10,20 +10,20 @@ mongoose.connection
 		console.log('Connectin error', 'error');
 	});
 
-mongoose.connect(
-	// `mongodb+srv://imonikheaugbodaga:${process.env
-	// .MoNGO_ATLAS_PW}@@vue-ecommerce-app-k8poc.mongodb.net/test?retryWrites=true&w=majority`,
-	// `mongodb+srv://imonikheaugbodaga:Congratulations@@vue-ecommerce-app-k8poc.mongodb.net/test?retryWrites=true&w=majority`,
-	`
-	mongodb+srv://imonikheaugbodaga:Congratulations@vue-ecommerce-app-k8poc.mongodb.net/test?retryWrites=true&w=majority
-	`,
-	{
-		keepAlive: true,
-		useNewUrlParser: true,
-		// useMongoClient: true,
-		useUnifiedTopology: true
-	}
-);
+// mongoose.connect(
+// 	// `mongodb+srv://imonikheaugbodaga:${process.env
+// 	// .MoNGO_ATLAS_PW}@@vue-ecommerce-app-k8poc.mongodb.net/test?retryWrites=true&w=majority`,
+// 	// `mongodb+srv://imonikheaugbodaga:Congratulations@@vue-ecommerce-app-k8poc.mongodb.net/test?retryWrites=true&w=majority`,
+// 	`
+// 	mongodb+srv://imonikheaugbodaga:Congratulations@vue-ecommerce-app-k8poc.mongodb.net/test?retryWrites=true&w=majority
+// 	`,
+// 	{
+// 		keepAlive: true,
+// 		useNewUrlParser: true,
+// 		// useMongoClient: true,
+// 		useUnifiedTopology: true
+// 	}
+// );
 
 module.exports.Products = require('./Products');
 module.exports.Users = require('./User');
