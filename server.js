@@ -5,4 +5,4 @@ server = http.createServer(app);
 
 server.listen(Port, () => {
 	console.log('server has started');
-});
+})
