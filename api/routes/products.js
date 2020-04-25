@@ -2,12 +2,14 @@ const express = require('express');
 mongoose = require('mongoose');
 router = express.Router();
 ProductController = require('../controller/ProductController');
-auth = require('../middleware/auth')
-router.route('/',)
-       .get(ProductController.getAllProducts)
-       .post(ProductController.add_New_Products)
+const {
+	getAllProducts,
+	add_New_Products,
+	get_one_product,
+	remove_one_product
+} = require('../controller/ProductController');
+auth = require('../middleware/auth');
+router.route('/').get(getAllProducts).post(add_New_Products);
 
-router.route('/:ProductId')
-          .get(ProductController.get_one_product)
-          .delete(ProductController.remove_one_product)
+router.route('/:ProductId').get(get_one_product).delete(remove_one_product);
 module.exports = router;
