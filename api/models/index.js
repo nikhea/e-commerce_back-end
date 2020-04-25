@@ -29,3 +29,4 @@ module.exports.Products = require('./Products');
 module.exports.Users = require('./User');
 module.exports.Carts = require('./Cart');
 module.exports.CheckOuts = require('./Checkout');
+module.exports.ShoppingList = require('./ShoppingList')

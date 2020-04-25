@@ -8,11 +8,11 @@ mongoose = require('mongoose');
 ProductsApi = require('./api/routes/products');
 CartApi = require('./api/routes/Cart');
 UsersApi = require('./api/routes/User');
+ShoppingListApi = require('./api/routes/ShoppingList');
 seedDB = require('./seeds');
 
 // seedDB()
 mongoose.connect('mongodb://localhost/new-ecomm-shops', { useNewUrlParser: true, useUnifiedTopology: true });
-
 
 mongoose.Promise = global.Promise;
 
@@ -36,6 +36,7 @@ app.use((req, res, next) => {
 app.use('/api/routes/products', ProductsApi);
 app.use('/api/routes/carts', CartApi);
 app.use('/api/routes/users', UsersApi);
+app.use('/api/routes/ShoppingList', ShoppingListApi);
 app.use((req, res, next) => {
 	const error = new Error('NOT FOUND ');
 	error.status = 404;

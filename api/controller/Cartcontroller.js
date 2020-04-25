@@ -4,7 +4,9 @@ exports.getAllCart = async (req, res, next) => {
 	try {
 		const Cart = await db.Carts
 			.find()
-			.populate('products') // .select('Product')
+			.select('-__v')
+			.populate('products') 
+
 			.exec();
 
 		if (Cart) {

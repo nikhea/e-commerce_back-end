@@ -92,19 +92,22 @@ exports.login_user = async (req, res, next) => {
 	});
 };
 
-exports.get_users = async (req, res, next) => {
+exports.get_user = async (req, res, next) => {
 	try {
-		const users = await db.Users.findById(req.user.id);
-		res.status(200).json(users);
+		const user = await db.Users.findById(req.params.id).select('-password');
+		if (user) {
+			res.status(200).json(user);
+			console.log(user);
+		}
 	} catch (error) {
 		res.status(500).json({ msg: 'User Not Found ' });
 	}
 };
-exports.get_user = async (req, res, next) => {
+exports.get_users = async (req, res, next) => {
 	try {
-		const users = await db.Users.find();
+		const users = await db.Users.find().select('-password');
 		res.status(200).json(users);
-		console.log(users)
+		// console.log(users);
 	} catch (error) {
 		res.status(500).json({ msg: 'User Not Found ' });
 	}

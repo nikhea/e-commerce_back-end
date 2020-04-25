@@ -2,7 +2,7 @@ const db = require('../models');
 
 exports.getAllProducts = async (req, res, next) => {
 	try {
-		const Product = await db.Products.find().exec();
+		const Product = await db.Products.find().select('-__v').exec();
 		if (Product) {
 			res.status(200).json(Product);
 		} else {
@@ -12,7 +12,6 @@ exports.getAllProducts = async (req, res, next) => {
 		console.log(err);
 		res.status(500).json({ msg: 'Product not found' });
 	}
-	
 };
 
 exports.add_New_Products = async (req, res, next) => {
@@ -43,7 +42,7 @@ exports.add_New_Products = async (req, res, next) => {
 exports.get_one_product = async (req, res, next) => {
 	try {
 		const id = req.params.ProductId;
-		const product = await db.Products.find({ _id: id });
+		const product = await db.Products.find({ _id: id }).select('-__v').exec();
 		if (product) {
 			res.status(200).json(product);
 		}
